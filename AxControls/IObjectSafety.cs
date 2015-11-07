@@ -12,10 +12,6 @@ namespace AxControls
     [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
     public interface IObjectSafety
     {     
-        [PreserveSig()]
-        int GetInterfaceSafetyOptions(ref Guid riid, out int pdwSupportedOptions, out int pdwEnabledOptions);
- 
-        [PreserveSig()]
-        int SetInterfaceSafetyOptions(ref Guid riid, int dwOptionSetMask, int dwEnabledOptions);
+
     }
 }
