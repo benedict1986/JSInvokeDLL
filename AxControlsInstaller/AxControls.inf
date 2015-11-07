@@ -1,0 +1,17 @@
+[version]
+signature="$CHICAGO$"
+AdvancedINF=2.0
+ 
+[Add.Code]
+AxControlsInstaller.msi=AxControlsInstaller.msi
+ 
+[AxControlsInstaller.msi]
+file-win32-x86=thiscab
+clsid={7442B95D-9F7D-422C-9C87-EF01FF042106}
+FileVersion=1,0,0,0
+ 
+[Setup Hooks]
+RunSetup=RunSetup
+ 
+[RunSetup]
+run="""msiexec.exe""" /i """%EXTRACT_DIR%\AxControlsInstaller.msi""" /qn
